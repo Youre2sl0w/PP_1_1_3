@@ -21,7 +21,7 @@ public class UserServiceImpl implements UserService {
     }
 
     public void removeUserById(long id) {
-        userDaoJDBC.createUsersTable();
+        userDaoJDBC.removeUserById(id);
     }
 
     public List<User> getAllUsers() {
