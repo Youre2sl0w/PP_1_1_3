@@ -21,7 +21,7 @@ public class UserDaoJDBCImpl implements UserDao {
     public UserDaoJDBCImpl() {
     }
 
-    public void createUsersTable() {
+    public void createUsersTableQuery() {
         try(Statement statement = connection.createStatement()) {
             statement.executeUpdate(createUsersTable);
         } catch (SQLException e) {
